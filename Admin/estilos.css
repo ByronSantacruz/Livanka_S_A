@@ -1,0 +1,430 @@
+
+
+/* Estilos para el header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #020202;
+  height: 80px;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el logo */
+.logo {
+  height: 60px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search-bar form {
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #E4C000;
+}
+
+.search-bar button[type="submit"] {
+  background-color: orange;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para el menú */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  position: relative;
+}
+
+nav > ul > li > a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #FFD400;
+  font-size: 16px;
+}
+
+
+nav > ul > li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100px;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+nav ul ul li a:hover {
+  background-color: orange;
+  color: black;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ /* Estilos para el formulario */
+ .formulario {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 100px auto 0; /* Agrega un margen superior de 50px */
+  background-color: rgba(67, 170, 139, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+ /* Estilos para el formulario Congelados */
+ .formularioCongelado {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 100px auto 0; /* Agrega un margen superior de 50px */
+  background-color: rgba(239, 157, 236, 0.9);
+
+  border-radius: 10px;
+  padding: 20px;
+}
+.botonCongelado {
+  width: 198px;
+  height: 81px;
+  background-color: #7815E4;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  margin-top: auto;
+}
+.formularioFescos {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 100px auto 0; /* Agrega un margen superior de 50px */
+  background-color: rgba(69, 177, 180, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+}
+.botonFescos {
+  width: 198px;
+  height: 81px;
+  background-color: #6d5488;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.columna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.etiqueta {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.campo-texto {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.boton {
+  width: 198px;
+  height: 81px;
+  background-color: #C21975;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  margin-top: auto;
+}
+.cuadradito {
+  width: 100px; /* Ajusta el valor según tu preferencia */
+  background: rgba(255, 169, 0, 0.99);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el contenido */
+  cursor: pointer; /* Añade esta línea para cambiar el cursor a una mano */
+}
+
+
+.cuadradito h3 {
+  font-size: 18px;
+  font-weight: bold; /* Cambiado a 'bold' para negrita */
+  color: #000000;
+  margin: 5px 0;
+}
+
+ /* Estilo para la calificación */
+ .calificacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Color de fondo del rectángulo */
+  width: 100%; /* Ancho del rectángulo */
+  height: 30px; /* Alto del rectángulo */
+  border-radius: 5px;
+}
+
+.estrella {
+  cursor: pointer;
+  color: #dfdad0; /* Color de las estrellas */
+  font-size: 20px; /* Tamaño de las estrellas */
+  margin: 0 2px; /* Espacio entre las estrellas */
+}
+/* Estilo para el contenedor de la vista previa de la imagen */
+.campo-archivo {
+  width: 100px;
+  height: 21px;
+}
+
+.vista-previa-container {
+  margin-top: 5px;
+  width: 200px;
+  height: 170px;
+  background-color: #dfdad0;
+}
+#vista-previa {
+  width: 100%;
+  height: 100%;
+}
+
+.tituloSnack {
+  color: rgb(67, 170, 139);
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px 0px black;
+  letter-spacing: 2px;
+}
+.tituloCongelados {
+  color: rgba(239, 157, 236, 0.9);
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px 0px black;
+  letter-spacing: 2px;
+}
+.tituloFrescos{
+  color: rgba(69, 177, 180, 0.9);
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px 0px black;
+  letter-spacing: 2px;
+}
+
+/*DSAD*/
+.rectangulo {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 920px;
+  height: 500px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #a1c4eefa;
+}
+
+
+.ocultar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: #A4C639;
+  cursor: pointer;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Para centrar horizontalmente el texto */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #D9D9D9;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+td {
+  border-bottom: 1px solid black;
+}
+
+.imagen-producto {
+  width: 50px;
+  height: 50px;
+}
+
+.botonEliminar {
+  background: #FF8E008E;
+}
+
+.botoneditar {
+  background: #7289DABD;
+}
+
+
+.tabla-contenedor {
+  height: 400px; /* Altura fija del contenedor */
+  overflow-y: auto; /* Habilitar la barra de desplazamiento vertical si es necesario */
+}
+
+/*EDITAR*/
+.cuadro-edicion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 6;
+  width: 352px;
+  height: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+}
+
+.cuadro-edicion .imagen-producto {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 265px;
+}
+
+.cuadro-edicion input,
+.cuadro-edicion textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cuadro-edicion button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #A4C639;
+  color: white;
+  cursor: pointer;
+}
+
+.cuadro-edicion button:hover {
+  background-color: #A4C639;
+  color: #000;
+}
+
+.cuadro-edicion .cerrar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  border: none;
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+
+.cuadro-edicion label {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.cuadro-edicion span {
+  display: inline-block;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
