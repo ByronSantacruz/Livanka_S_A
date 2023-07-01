@@ -1,9 +1,8 @@
 <?php
-
 // Configuración de la conexión a la base de datos
 $dsn = "pgsql:host=localhost;dbname=LIVANKA";
 $username = "postgres";
-$password = "openpgpwd";
+$password = "12345";
 
 try {
     // Crear una nueva instancia de PDO
@@ -13,6 +12,7 @@ try {
     $conex->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Mostrar mensaje de conexión exitosa
+    echo "Conexión exitosa a la base de datos.";
 } catch (PDOException $e) {
     // Error al conectar a la base de datos
     echo "Error al conectar a la base de datos: " . $e->getMessage();

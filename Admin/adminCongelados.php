@@ -1,6 +1,10 @@
 <?php
 session_start();
 $varsesion = $_SESSION['nombre_usuario'];
+if (!isset($_SESSION['nombre_usuario']) || empty($_SESSION['nombre_usuario'])) {
+  echo 'ILEGAL... No has ingresado datos para iniciar sesión!!';
+  die();
+}
 if ($varsesion == null || $varsesion == '') {
   echo 'ILEGAL... No has ingresado datos para iniciar sesión!!';
   die();

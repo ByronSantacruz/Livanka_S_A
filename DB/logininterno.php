@@ -1,7 +1,5 @@
 <?php
-
 require 'con_db.php';
-
 session_start();
 $usuario = $_POST['usuario'];
 $contra = $_POST['contra'];
@@ -15,8 +13,9 @@ $resultado = $statement->fetch(PDO::FETCH_ASSOC);
 if ($resultado) {
     $_SESSION['nombre_usuario'] = $usuario;
     $_SESSION['nombre_completo'] = $resultado['nombre_completo'];
-    header("location: ../Admin/adminSnack.php");
-} else {
-    echo "No se ha encontrado este usuario en la base de datos!<br>";
+    header("location: ../Admin/adminSnack.php");   
+}
+else{
+    header("location: ../Admin/inciosesion.php");   
 }
 ?>
