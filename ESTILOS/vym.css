@@ -1,0 +1,108 @@
+header{
+  background-image: url(../IMAGENES/fondo0.png);
+  margin-bottom: 0%;
+}
+.titulo{
+  color: white;
+  text-align: center;
+}
+.opinion{
+  background-color: #497492;
+  padding: 5%;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+}
+.cortante{
+  background-color:#000000;
+}
+section{
+  background-image: url(../IMAGENES/fondo.png);
+  margin-bottom: 0%;
+}
+.opinion1{
+  color: white;
+}
+.titulo2{
+  color: white;
+  text-align: center;
+  margin-top: -5%;
+}
+/* pie de pagina*/
+.bg-dark-light {
+  background: #EEE7AB !important;
+}
+.bg-theme, .bg-dark, .bg-dark-light, .bg-secondary {
+  color: black;
+}
+.widgets.footer-widgets .widget-title {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.widgets.footer-widgets .widget-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100px;
+  background: #13bfb1;
+}
+.widgets.footer-widgets .widget-quick-links ul {
+  margin-top: -4px;
+}
+.widgets.footer-widgets .single-widget ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.widgets.footer-widgets .widget-quick-links ul li {
+  display: block;
+}
+.widgets.footer-widgets .widget-quick-links ul li a {
+  display: block;
+  font-size: 13px;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 9px 0;
+}
+
+.widgets.footer-widgets .single-widget ul li {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+.widgets.footer-widgets .widget-contact ul li {
+  color: #000;
+  font-size: 13px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.widgets.footer-widgets .widget-contact ul li span {
+  font-size: 14px;
+  color: black;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 20px;
+}
+.widgets.footer-widgets .widget-contact ul li.phone, .widgets.footer-widgets .widget-contact ul li.fax {
+  font-size: 15px;
+}
+.widgets.footer-widgets .widget-contact ul li + li {
+    margin-top: 20px;
+}

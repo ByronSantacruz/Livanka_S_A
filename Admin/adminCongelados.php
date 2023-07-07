@@ -35,7 +35,7 @@ if ($varsesion == null || $varsesion == '') {
     <div class="container">
       <header>
         <div class="logo">
-          <a href="#"><img src="../IMAGENES/logo.png" alt="Logo de la empresa"></a>
+          <a href="../Categoria/InicionUsuario.php"><img src="../IMAGENES/logo.png" alt="Logo de la empresa"></a>
         </div>
         <nav class="items">
           <ul>
@@ -48,12 +48,6 @@ if ($varsesion == null || $varsesion == '') {
             </li>
           </ul>
         </nav>
-        <div class="search-bar">
-          <form>
-            <input type="text" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-          </form>
-        </div>
         <nav class="person">
           <ul>
             <li><a href="#">Hola, <?php echo $_SESSION['nombre_completo']; ?></a>

@@ -1,9 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body {
-    background-image: url(fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../IMAGENES/fondo.png);
 }
 
 * {

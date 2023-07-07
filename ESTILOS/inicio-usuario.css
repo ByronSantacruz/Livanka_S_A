@@ -1,0 +1,246 @@
+body{
+  background-image: url(../IMAGENES/fondo0.png);
+  margin-bottom: 0%;
+}
+.Principal{
+  background-image: url(../IMAGENES/fondo0.png);
+}
+.cortante{
+  background-color:#000000;
+}
+.opinion{
+  background-color: #0f76c0;
+  padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+}
+.container-card {
+  width: 70%;
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+.card {
+  margin-left: 30px;
+  padding: 1px;
+  width: 100%;
+  margin: -1px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #82E0AA;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+  .card:hover {
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+      transform: translateY(-3%);
+  }
+
+  .card img {
+    margin-top: 10px;
+      width: 100%;
+      height: 100px;
+  }
+
+  .card .contenido-card {
+      padding: -5px;
+      text-align: center;
+  }
+
+      .card .contenido-card h3 {
+          margin-bottom: 15px;
+          color: #353333;
+      }
+
+      .card .contenido-card a {
+          display: inline-block;
+          padding: 10px;
+          margin-top: 10px;
+          text-decoration: none;
+          color: #2fb4cc;
+          border: 1px solid #2fb4cc;
+          border-radius: 4px;
+          transition: all 400ms ease;
+          margin-bottom: 5px;
+      }
+
+          .card .contenido-card a:hover {
+              background: #2fb4cc;
+              color: #fff;
+          }
+
+@media only screen and (min-width:300px) and (max-width:700px) {
+  .container-card {
+      flex-wrap: wrap;
+  }
+
+  .card {
+      margin: 10px;
+  }
+}
+
+/*Seccion 3*/ 
+.seccion3{
+  margin-top: 10px;
+  background-image: url(../IMAGENES/fondon3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  position: center
+}
+ 
+.titulo-pedido {
+  margin-top: -60px;
+  text-align: center;
+  color: #f1eff1;
+  font-size: 40px;
+}
+
+/*Contenedor 1*/ 
+.container-cards {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.cards {
+  width: 100%;
+  margin: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #D5F5E3;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+  .cards:hover {
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+      transform: translateY(-3%);
+  }
+
+  .cards img {
+    margin-top: 10px;
+      width: 100%;
+      height: 210px;
+  }
+
+  .cards .contenido-cards {
+      padding: 15px;
+      text-align: center;
+  }
+
+      .cards .contenido-cards h3 {
+          margin-bottom: 15px;
+          color: #0e0b0b;
+      }
+
+
+@media only screen and (min-width:320px) and (max-width:700px) {
+  .container-cards {
+      flex-wrap: wrap;
+  }
+  .cards {
+      margin: 20px;
+  }
+}
+
+/* pie de pagina*/
+.bg-dark-light {
+  background: #EEE7AB !important;
+}
+.bg-theme, .bg-dark, .bg-dark-light, .bg-secondary {
+  color: black;
+}
+.widgets.footer-widgets .widget-title {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.widgets.footer-widgets .widget-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100px;
+  background: #13bfb1;
+}
+.widgets.footer-widgets .widget-quick-links ul {
+  margin-top: -4px;
+}
+.widgets.footer-widgets .single-widget ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.widgets.footer-widgets .widget-quick-links ul li {
+  display: block;
+}
+.widgets.footer-widgets .widget-quick-links ul li a {
+  display: block;
+  font-size: 13px;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 9px 0;
+}
+
+.widgets.footer-widgets .single-widget ul li {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+.widgets.footer-widgets .widget-contact ul li {
+  color: #000;
+  font-size: 13px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.widgets.footer-widgets .widget-contact ul li span {
+  font-size: 14px;
+  color: black;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 20px;
+}
+.widgets.footer-widgets .widget-contact ul li.phone, .widgets.footer-widgets .widget-contact ul li.fax {
+  font-size: 15px;
+}
+.widgets.footer-widgets .widget-contact ul li + li {
+    margin-top: 20px;
+}
+.titulo{
+  color: #FFD400;
+  margin-bottom: 70px;
+}
+.titulo2{
+  color: #FFD400;
+}
+.quedice{
+  color: #000;
+  font-weight: bold;
+}
